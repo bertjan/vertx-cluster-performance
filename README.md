@@ -16,4 +16,7 @@ Tried with different vert.x versions (3.3.x and 3.4.0.Beta1, no noticeable diffe
 Timings (on my 2014 MBP):  
 - without cluster: first message received after 10ms, done after 5200 - 5500ms  
 - with cluster: first message received after 15000ms, done after 17000ms  
-- with cluster, local consumer: first message received after 13000ms, done after 15000ms  
+- with cluster, local consumer: first message received after 13000ms, done after 15000ms
+  
+Findings:
+- JGroupsClusterManager seems to be faster than HazelcastClusterManager (JGroups: first message after 4780 ms, done after 7000ms)
