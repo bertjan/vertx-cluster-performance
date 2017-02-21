@@ -14,6 +14,6 @@ Both verticles are deployed as worker verticles to rule out eventloop blocking i
 Tried with different vert.x versions (3.3.x and 3.4.0.Beta1, no noticeable differences)  
   
 Timings (on my 2014 MBP):  
-- without cluster: first message received after 11ms, done after 5200 - 5500ms  
+- without cluster: first message received after 10ms, done after 5200 - 5500ms  
 - with cluster: first message received after 15000ms, done after 17000ms  
 - with cluster, local consumer: first message received after 13000ms, done after 15000ms  
