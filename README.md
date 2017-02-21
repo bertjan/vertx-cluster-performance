@@ -3,10 +3,10 @@ Reproducer for performance degradation when running Vert.x in clustered mode
 
 Setup:  
   
-ConsumerVerticle listens on the eventbus and replies to messages it receives.
-ProducerVerticle sends 500k eventbus messages and logs the duration of replies.
-WithClusterStarter starts Vert.x in clustered mode and deploys both verticles.
-WithoutClusterStarter starts Vert.x in non clustered mode and deploys both verticles.  
+ConsumerVerticle listens on the eventbus and replies to messages it receives.  
+ProducerVerticle sends 500k eventbus messages and logs the duration of replies.  
+WithClusterStarter starts Vert.x in clustered mode and deploys both verticles.  
+WithoutClusterStarter starts Vert.x in non clustered mode and deploys both verticles.    
   
 The only difference between the two scenario's is Vert.x is started with or without cluster.
 Both verticles are deployed as worker verticles to rule out eventloop blocking issues.  
