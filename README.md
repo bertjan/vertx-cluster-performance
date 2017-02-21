@@ -20,3 +20,4 @@ Timings (on my 2014 MBP):
   
 Findings:
 - JGroupsClusterManager seems to be faster than HazelcastClusterManager (JGroups: first message after 4780 ms, done after 7000ms)
+- IgniteClusterManager seems to be faster too, but not faster than JGroups (first message after 9863 ms, done after 12000ms)
