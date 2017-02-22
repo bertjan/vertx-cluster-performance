@@ -8,7 +8,7 @@ import java.util.stream.IntStream;
 
 public class ProducerVerticle extends AbstractVerticle {
 
-    private static final int NUM_MESSAGES = 500000;
+    private static final int NUM_MESSAGES = 500_000;
 
     private long replyCount = 0;
     private long start;
