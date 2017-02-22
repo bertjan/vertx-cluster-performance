@@ -34,7 +34,7 @@ public class ProducerVerticle extends AbstractVerticle {
     }
 
     private void onReply(AsyncResult<Message<Object>> reply) {
-        if ("OK".equals(reply.result().body())) {
+        if (reply.result() != null && "OK".equals(reply.result().body())) {
             replyCount++;
 
             // log progress for the impatient ;-)
